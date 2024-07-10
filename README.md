@@ -1,8 +1,10 @@
 # VAE_GANs_Codes
 
+This repo contains the implementation of various models which lays the fondation for the modern GenAi application in Vision field.
+
 ## VAE
 
-<u>**<u>ASSUMPTION<u/>**<u/>: Data is formed based on the underlying distribution of the latent variables, so creating that space leads to generating images.
+<u>**ASSUMPTION**<u/>: Data is formed based on the underlying distribution of the latent variables, so creating that space leads to generating images.
 
 <u>**PROBLEM**<u/> : p(z/x) is often intractable, due to the integration in the denominator so cant be caluclated directly. 
 
@@ -29,5 +31,13 @@
 
 **PROPOSAL** : GAN follows an adveserial process where gen aim is to generate real images and disc aim is to differentiate the input no matter what the task is, that means what ever the task there is no need of explicitly mentioning loss function. They exploited this detail of the GAN and proposed a new version GAN called Conditional GAN. In this gen outputs the translation of the source image to target image and the output of the disc is conditioned over source image.
 
-**OBJECTIVE** : same as of GAN but additional to that we should also make sure that the output of the gen is as near as possiable to the target image, we use L1 loss, pass a pairs of real source & target images and real source & fake target images to the discriminator
-""
+**OBJECTIVE** : same as of GAN but to make sure that the output of the gen is as near as possiable to the target image, we use L1 loss, pass a pairs of real source & target images and real source & fake target images to the discriminator
+
+## CYCLE GAN
+
+**PROBLEM** : It is hard to get paired images for all image to image translation tasks. Though PIX2PIX works good bt its also needs paired dataset. An approch which can leverage single domain data would be appreciable
+
+**PROPOSAL**: Just like pix2pix it also uses GANs, but with an extra loss that is Cycle loss. Adding this loss changed the whole play.
+
+**OBJECTIVE**: same as of GAN but to make sure that the output of the gen is as near as possiable to the target domain we use cycle loss
+
