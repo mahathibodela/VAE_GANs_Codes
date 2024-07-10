@@ -2,7 +2,7 @@
 
 ## VAE
 
-<u>**ASSUMPTION**<u/>: Data is formed based on the underlying distribution of the latent variables, so creating that space leads to generating images.
+<u>**<u>ASSUMPTION<u/>**<u/>: Data is formed based on the underlying distribution of the latent variables, so creating that space leads to generating images.
 
 <u>**PROBLEM**<u/> : p(z/x) is often intractable, due to the integration in the denominator so cant be caluclated directly. 
 
