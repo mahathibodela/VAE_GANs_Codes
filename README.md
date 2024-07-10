@@ -10,7 +10,7 @@ This repo contains the implementation of various models which lays the fondation
 
 <u>**PROPOSAL**<u/> : Approximating p(z/x) with another distribution q(z) through neural networks(encoder), then generating image from the space with the use of repameterisation technique.
 
-<u>**OBJECTIVE**<u/> : KL divergenec btw q(z) & p(z/x) should be as minimum as possiable, Reconstruction Loss for output of decoder to be same similar as input image.
+<u>**OBJECTIVE**<u/> : KL divergenec btw q(z/x) & p(z/x) should be as minimum as possiable, Reconstruction Loss for output of decoder to be same similar as input image.
 
 
 ## GAN
