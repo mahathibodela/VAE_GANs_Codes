@@ -2,13 +2,13 @@
 
 ## VAE
 
-Assumption: Data is formed based on the underlying distribution of the latent variables, so creating that space leads to generating images
+ASSUMPTION: Data is formed based on the underlying distribution of the latent variables, so creating that space leads to generating images
 
-Problem: p(z/x) is often intractable, due to the integration in the denominator so cant be caluclated directly. 
+PROBLEM: p(z/x) is often intractable, due to the integration in the denominator so cant be caluclated directly. 
 
-Proposal: Approximating p(z/x) with another distribution q(z) through neural networks(encoder), then generating image from the space with the use of repameterisation technique
+PROPOSAL: Approximating p(z/x) with another distribution q(z) through neural networks(encoder), then generating image from the space with the use of repameterisation technique
 
-Objective: KL divergenec btw q(z) & p(z/x) should be as minimum as possiable, Reconstruction Loss for output of decoder to be same similar as input image
+OBJECTIVE: KL divergenec btw q(z) & p(z/x) should be as minimum as possiable, Reconstruction Loss for output of decoder to be same similar as input image
 
 
 ## GAN
