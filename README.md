@@ -23,7 +23,7 @@ This repo contains the implementation of various models which lays the fondation
 
 ## DCGAN
 
-**Refinement** : It is a refinement of GAN. Introduced CNN in building GAN.
+**REFINEMENT** : It is a refinement of GAN. Introduced CNN in building GAN.
 
 ## PIX2PIX
 
